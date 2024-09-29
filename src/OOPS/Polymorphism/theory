@@ -1,0 +1,11 @@
+POLYMORPHISM
+
+Refers to ability to perform certain action in different ways
+
+Two forms = Method Overloading and Method Overriding
+
+Method Overloading(static or compile):
+Method overloading is a feature in which the same method name is used in multiple classes but with different signature.
+
+Method Overriding(dynamic or runtime):
+Method overriding occurs when child class overrides a method of its parent class.

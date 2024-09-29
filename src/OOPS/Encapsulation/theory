@@ -1,0 +1,5 @@
+ENCAPSULATION:
+
+Binds data and methods in a single unit like a capsule.
+Restricts direct access to data members
+Each field are set to private with getter and setter

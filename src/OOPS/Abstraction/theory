@@ -1,0 +1,15 @@
+ABSTRACTION:
+
+Hides complex implementations, only shows necessary information
+Simplifies code interaction and reduces complexity
+For example:
+Driving a car -> Don’t want to know how engine or internal system working
+SQL query -> Database Interface with methods ‘connect’ and ‘query’, hiding details of SQL and NoSQL operations
+
+2 ways to implement abstraction: abstract classes(50%) and interfaces(100%)
+Abstract Classes-
+Abstract class is a superclass that cannot be instantiated. To create new object, need to instantiate one of its child classes.
+It can have both abstract(contains only method signatures) and concrete methods(declare the method body as well).
+
+Interfaces-
+100% abstractions -> Can have final, static, public fields and abstract methods only. Class can implement any number of interfaces with ‘implements’ keyword
