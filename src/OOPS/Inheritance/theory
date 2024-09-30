@@ -1,0 +1,14 @@
+INHERITANCE
+
+Allows to inherit properties from another class -> Code reusability and establishing relationship between classes(Association)
+
+Single Inheritance = One parent and one child
+
+Multilevel Inheritance = Class inherits from another class, which in turn inherits from another class
+
+Hierarchical Inheritance = Multiple classes inherit from a single class
+
+Multiple Inheritance = Achieved through interfaces, as classes cannot extend more than 1 class
+
+Hybrid Inheritance = Multiple Inheritance + Hierarchical Inheritance
+
