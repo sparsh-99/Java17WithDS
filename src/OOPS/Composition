@@ -1,0 +1,6 @@
+COMPOSITION
+
+It is stricter form of aggregation. Occurs when two classes we associated are mutually dependent and can't exist without the other one.
+
+For example:
+Car and Engine class

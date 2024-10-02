@@ -1,0 +1,10 @@
+AGGREGATION
+
+Narrower kind of association -> THere (HAS-A) relationship between 2 classes associated through their objects
+
+For example:
+Every passenger has a Car but Car doesn't necessarily have passengers
+
+One-directional association
+Represents a HAS-A relationship between two classes
+Only one class is dependent on the other

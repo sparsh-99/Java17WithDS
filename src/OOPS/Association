@@ -1,0 +1,10 @@
+ASSOCIATION
+
+Act of establishing relationship between 2 unrelated classes.
+
+For example, when you declare two fields of different types (e.g. Car and Bicycle) within the same class and make them interact with each other, you have created an association.
+
+
+Two separate classes are associated through their objects
+The two classes are unrelated, each can exist without the other one
+Can be a one-to-one, one-to-many, many-to-one, or many-to-many relationship
