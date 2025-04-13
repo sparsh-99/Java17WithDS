@@ -1,8 +1,10 @@
 package Stream;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class OperationsOnStream {
     public static void main(String[] args) {
@@ -32,5 +34,19 @@ public class OperationsOnStream {
         //6. Limit -> Returns the first n elements from the stream.
         List<String> limitedList = list.stream() .limit(3).toList();
         System.out.println("Limited List: " + limitedList);
+
+        List<String> list1 = Arrays.asList("apple", "banana", "cherry", "apple", "banana", "date", "watermelon");
+
+        List<String> results = list1.stream()
+                .filter(s -> s.length() > 5) // keeps only string with length > 5 = "banana", "cherry", "banana", "watermelon"
+                .map(String::toUpperCase) // converts to uppercase = "BANANA", "CHERRY", "BANANA", "WATERMELON"
+                .flatMap(s -> Stream.of(s.split(""))) // [B, A, N, A, N, A, C, H, E, R, R, Y, B, A, N, A, N, A, W, A, T, E, R, M, E, L, O, N]
+                .distinct() // [B, A, N, C, H, E, R, Y, W, T, M, L, O]
+                .sorted(Comparator.reverseOrder()) // Sorts characters in reverse lexicographical (alphabetical) order: [Y, W, T, R, O, N, M, L, H, E, C, B, A]
+                .limit(10) // [Y, W, T, R, O, N, M, L, H, E]
+                .skip(2) // [T, R, O, N, M, L, H, E]
+                .peek(System.out::println)
+                .toList();
+        System.out.println("Results: " + results);
     }
 }
