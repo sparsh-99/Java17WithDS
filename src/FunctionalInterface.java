@@ -1,6 +1,6 @@
 @java.lang.FunctionalInterface
 interface MyInterface {
-    void myMethod();
+    int myMethod(int i, int j);
 }
 
 //class B implements MyInterface {
@@ -13,7 +13,8 @@ interface MyInterface {
 // Will use Lambda expression to implement interface
 public class FunctionalInterface {
     public static void main(String[] args) {
-        MyInterface myInterface = () -> System.out.println("My Interface");
-        myInterface.myMethod();
+//        MyInterface myInterface = (i, j) -> i + j;
+        MyInterface myInterface = Integer::sum;
+        System.out.println("Result: " + myInterface.myMethod(1, 2));
     }
 }
